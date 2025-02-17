@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.status-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(226, 226, 223);
+  align-items: center;
+}
+
+.status-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 226, 223);
+  color: rgb(78, 78, 78);
+  width: 20em;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 0;
+}
+
+.status-list {
+  display: flex;
+  width: 20em;
+  
+  list-style-type: none;
+  background-color: rgb(226, 226, 223);
+  margin-top: -3px;
+  justify-content: center;
+  padding: 10px 0px 0px 0px;
+}
+
+.status-list a {
+  flex: 1; 
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+  background-color: rgb(226, 226, 223); 
+}
+
+.status-list a.active {
+  background-color: white; 
+}
+
+.status-list a.active {
+  background-color: none;
+}
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 3px;
+  border-radius: 5px;
+  transition: background 0.2s ease-in-out;
+  color: rgb(78, 78, 78);
+}
+
+.icon-button:hover {
+  background: #ddd;
+}
